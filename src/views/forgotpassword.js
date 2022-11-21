@@ -31,7 +31,7 @@ export const ForgotPassword = () => {
 
     return (
         <>
-            <div className="w-11/12 md:w-2/3 xl:w-1/3 bg-white rounded-xl h-max m-auto shadow-xl p-14 bg-opacity-20 backdrop-blur-lg border-2 border-slate-200" data-aos="zoom-out">
+            <div className="w-11/12 md:w-2/3 xl:w-1/3 bg-slate-500 rounded-xl h-max m-auto shadow-xl p-14 bg-opacity-20 backdrop-blur-lg border-2 border-slate-200" data-aos="zoom-out">
                 <div className='space-y-6'>
                     <div><img src={logo} alt="img" className='w-24 mx-auto' /></div>
                     <div>
