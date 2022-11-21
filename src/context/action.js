@@ -1,0 +1,1 @@
+export const MOBILE_NAV = "MOBILE_NAV"
