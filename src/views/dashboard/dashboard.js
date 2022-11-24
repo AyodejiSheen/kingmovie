@@ -13,7 +13,7 @@ export const Dashboard = () => {
     return (
         <>
             <section className=''>
-                <div className="bg-slate-900 px-6 xl:px-24 2xl:px-36 py-1.5 flex items-center justify-between fixed w-full h-16 lg:h-24 border-b border-slate-600">
+                <div className="bg-slate-900 z-50 px-2 md:px-6 xl:px-24 2xl:px-36 py-1.5 flex items-center justify-between fixed w-full h-16 lg:h-24 border-b border-slate-600">
 
                     <div className='flex gap-4 items-center'>
                         <div onClick={toggleNav}>
@@ -31,23 +31,21 @@ export const Dashboard = () => {
 
                     {/* search bar */}
                     <div>
-                        <div className="lg:flex justify-center flex-1 hidden">
+                        <div className="md:flex justify-center flex-1 hidden">
                             <div className="relative w-full max-w-xl mr-6 focus-within:text-black text-blue-700">
                                 <div className="absolute inset-y-0 flex items-center pl-2">
                                     <svg className="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
                                     </svg>
                                 </div>
-                                <input className="w-96    pl-8 pr-2 py-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 focus:placeholder-gray-500 focus:bg-white focus:border-white focus:outline-none focus:shadow-outline-purple form-input" type="text" placeholder="Search for something here..." aria-label="Search" />
+                                <input className="lg:w-72 xl:w-96    pl-8 pr-2 py-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 focus:placeholder-gray-500 focus:bg-white focus:border-white focus:outline-none focus:shadow-outline-purple form-input" type="text" placeholder="Search for something here..." aria-label="Search" />
                             </div>
                         </div>
                     </div>
 
                     <div className='text-white flex items-center gap-4 md:gap-10 font-medium'>
-                        <div className='text-lg  items-center'>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 10.5v6m3-3H9m4.06-7.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
-                            </svg>
+                        <div className='bg-green-800 px-2 lg:px-4 py-2 rounded-full cursor-pointer items-center'>
+                            <p className='text-xs lg:text-sm text-green-400'>Upgrade to Pro</p>
                         </div>
                         <div className='text-lg  items-center'>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
@@ -55,11 +53,11 @@ export const Dashboard = () => {
                             </svg>
                         </div>
 
-                        <div className='text-lg flex gap-3 items-center'>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <div className='lg:text-lg flex gap-3 items-center'>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" w-8 h-8">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
-                            <p>John Doe</p>
+                            <p className='hidden lg:block'>John Doe</p>
                         </div>
                     </div>
 
@@ -68,7 +66,7 @@ export const Dashboard = () => {
                 <div className='pt-16 lg:pt-24 '>
                     <section className='lg:flex'>
                         <div className=''>
-                            <SideNav/>
+                            <SideNav />
                         </div>
                         <div className='w-full lg:w-full lg:ml-80 xl:ml-72'>
                             <Outlet />

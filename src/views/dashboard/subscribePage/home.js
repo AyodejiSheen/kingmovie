@@ -1,26 +1,28 @@
-
-import { MiniNav } from "./miniNav";
-import { SideNav } from "./sideNav"
-import lg1 from '../../media/lg1.jpg'
-import lg2 from '../../media/lg2.jpg'
-import lg3 from '../../media/lg3.jpg'
-import dp from '../../media/dp.png'
+import { useState } from 'react'
+import lg1 from '../../../media/lg1.jpg'
+import lg2 from '../../../media/lg2.jpg'
+import lg3 from '../../../media/lg3.jpg'
+import dp from '../../../media/dp.png'
 import { Link } from "react-router-dom";
 
 
+export const Home = () => {
 
 
-export const MoviePage = () => {
 
+    const [eventOpt, seteventOpt] = useState(false);
+
+
+    const showEventOption = () => {
+        seteventOpt(!eventOpt);
+    }
 
 
 
     return (
         <>
-
-
-            <div className="bg-slate-900 px-5 p-5 h-max space-y-6">
-                <MiniNav />
+            <section className='pb-6'>
+                <h2 className="font-semibold text-xl text-slate-400 p-5">Videos <span className='text-sm mx-4'><i class="fa-solid fa-play mr-4"></i> PLAY ALL</span></h2>
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 
 
@@ -48,7 +50,7 @@ export const MoviePage = () => {
                         </div>
                     </Link>
 
-
+                    
                     <div className="bg-slate-700 border-2 border-slate-600  rounded-lg">
                         <img src={lg3} alt="video1" className="rounded-t-lg w-full" />
 
@@ -226,8 +228,7 @@ export const MoviePage = () => {
                     </div>
 
                 </section>
-            </div>
-
+            </section>
         </>
     )
 }

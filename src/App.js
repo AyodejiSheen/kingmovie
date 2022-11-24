@@ -12,6 +12,14 @@ import { ResetPassword } from './views/resetPassword';
 import { Dashboard } from './views/dashboard/dashboard';
 import { MoviePage } from './views/dashboard/moviePage';
 import { WatchVideo } from './views/dashboard/watchVideo';
+import { ShortsVideo } from './views/dashboard/shorts';
+import { Subscribed } from './views/dashboard/subscribed';
+import { SubscribePage } from './views/dashboard/subscribePage/subscribepages';
+import { Library } from './views/dashboard/library';
+import { History } from './views/dashboard/history';
+import { WatchLater } from './views/dashboard/watchLater';
+import { LikedVideos } from './views/dashboard/likedVideos';
+import ScrollToTop from './scrollToTop';
 
 
 
@@ -19,8 +27,9 @@ function App() {
 
   AOS.init();
 
-  return ( 
+  return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Auth />}>
           <Route index element={<Login />}></Route>
@@ -31,8 +40,15 @@ function App() {
         </Route>
 
         <Route path="dashboard" element={<Dashboard />}>
-          <Route index element={<MoviePage/>}></Route>
-          <Route path="watching" element={<WatchVideo/>}></Route>
+          <Route index element={<MoviePage />}></Route>
+          <Route path="watching" element={<WatchVideo />}></Route>
+          <Route path="shorts" element={<ShortsVideo />}></Route>
+          <Route path="subscribed" element={<Subscribed />}></Route>
+          <Route path="subscribed/user" element={<SubscribePage />}></Route>
+          <Route path="library" element={<Library />}></Route>
+          <Route path="history" element={<History />}></Route>
+          <Route path="watchlater" element={<WatchLater />}></Route>
+          <Route path="likedvideos" element={<LikedVideos />}></Route>
         </Route>
       </Routes>
     </>

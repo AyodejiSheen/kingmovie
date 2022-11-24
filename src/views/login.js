@@ -17,7 +17,6 @@ export const Login = () => {
     }
 
 
-
     //validationSchema--- to integrate validations on the form using Yup
     const validationSchema = Yup.object().shape({
         email: Yup.string().email('Invalid email').required('Email is required'),
