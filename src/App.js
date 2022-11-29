@@ -20,6 +20,13 @@ import { History } from './views/dashboard/history';
 import { WatchLater } from './views/dashboard/watchLater';
 import { LikedVideos } from './views/dashboard/likedVideos';
 import ScrollToTop from './scrollToTop';
+import { Trending } from './views/dashboard/trending/trending';
+import { Plan } from './views/dashboard/plan';
+import { TvHome } from './views/tvPlatform/headerNav';
+import { Home } from './views/tvPlatform/home';
+import { Drama } from './views/tvPlatform/drama';
+import { ActionMovie } from './views/tvPlatform/actionMovie';
+import { Romance } from './views/tvPlatform/romance';
 
 
 
@@ -49,8 +56,18 @@ function App() {
           <Route path="history" element={<History />}></Route>
           <Route path="watchlater" element={<WatchLater />}></Route>
           <Route path="likedvideos" element={<LikedVideos />}></Route>
+          <Route path="trending" element={<Trending />}></Route>
+          <Route path="plan" element={<Plan />}></Route>
+        </Route>
+
+        <Route path="tv_platform" element={<TvHome />}>
+          <Route index element={<Home />}></Route>
+          <Route path="drama" element={<Drama/>}></Route>
+          <Route path="action_movie" element={<ActionMovie/>}></Route>
+          <Route path="romance" element={<Romance/>}></Route>
         </Route>
       </Routes>
+
     </>
   );
 }

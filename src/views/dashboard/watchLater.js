@@ -5,9 +5,16 @@ import dp from '../../media/dp.png'
 
 import { Link } from 'react-router-dom'
 import { MiniLibrary } from './miniLibrary'
+import { useContext } from 'react'
+import MainContext from '../../context/context'
+import { WatchLaterOption } from '../../components/watchlaterOption'
 
 
 export const WatchLater = () => {
+
+
+    let {show, showItem} = useContext(MainContext)
+
     return (
         <>
             <section className="bg-slate-900 flex justify-between lg:gap-10 px-2 md:px-6 lg:px-10 lg:py-10 py-6">
@@ -16,7 +23,7 @@ export const WatchLater = () => {
                     <div className=" space-y-3">
                         <div className='space-y-6'>
 
-                            <div>
+                            <div className='relative'>
                                 <div className='flex gap-6 items-center justify-between '>
                                     <div className='text-slate-400 px-4 bg-slate-700 h-max hidden md:block'><i class="fa-solid fa-grip-lines"></i></div>
                                     <div className='flex justify-between gap-6 lg:gap-10'>
@@ -34,12 +41,19 @@ export const WatchLater = () => {
                                             </Link>
                                         </div>
 
-                                        <div className='flex gap-6 h-max cursor-pointer'>
+                                        <div onClick={() => showItem('watchLater')} className=' flex gap-6 h-max cursor-pointer'>
                                             <div className='text-slate-400 px-3 py-2 bg-slate-700 text-sm lg:text-base rounded-full'><i class="fa-solid fa-ellipsis-vertical"></i></div>
                                         </div>
                                     </div>
                                 </div>
+
+                                {
+                                    show === 'watchLater' && (
+                                        <WatchLaterOption/>
+                                    )
+                                }
                             </div>
+
 
                             <div>
                                 <div className='flex gap-6 items-center justify-between '>

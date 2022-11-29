@@ -2,11 +2,11 @@ import { useContext } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import MainContext from '../../context/context'
 import logo from '../../media/logo.png'
-import { MoviePage } from './moviePage'
-import { SideNav } from './sideNav'
-import { WatchVideo } from './watchVideo'
 
-export const Dashboard = () => {
+import { SideNav } from './sideNav'
+
+
+export const TvHome = () => {
 
     let { toggleNav } = useContext(MainContext)
 
@@ -25,7 +25,7 @@ export const Dashboard = () => {
                             <div><img src={logo} alt="img" className='w-12 lg:w-16' /></div>
                         </div>
                         <div>
-                            <h2 className='text-white hidden md:block font-bold text-lg'>KING MOVIE</h2>
+                            <h2 className='text-white hidden md:block font-bold text-lg'>KING TV</h2>
                         </div>
                     </div>
 

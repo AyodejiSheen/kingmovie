@@ -1,15 +1,8 @@
-import { useState } from "react";
-import { Playlists } from "./playlists";
-
-import cvdp from '../../../media/cvdp.jpg'
-import { Home } from "./home";
-import { Channels } from "./channels";
-import { Community } from "./community";
-import { About } from "./about";
+import { useState } from 'react';
+import trend from '../../../media/trending.png'
 
 
-
-export const SubscribePage = () => {
+export const Trending = () => {
 
 
     const [active, setActive] = useState("tab1");
@@ -33,32 +26,20 @@ export const SubscribePage = () => {
 
     return (
         <>
-            <section className="bg-slate-900">
-                <section className="relative">
-                    <div>
-                        <img src={cvdp} alt="image" className=' h-80 object-cover w-full' />
-                    </div>
 
-                    <div className='w-5/6 mx-auto space-y-8 py-12'>
-                        <div className='md:flex space-y-3 md:space-y-0 gap-6 items-center justify-between'>
-                            <div className='space-y-1'>
-                                <h2 className='text-xl text-slate-300 font-bold'>EasyTechGeek</h2>
-                                <p className='text-sm text-slate-400'>@EasyTechGeek</p>
-                                <p className='text-sm text-slate-400'>47.3K subscribers • 465 videos</p>
-                            </div>
+            <section className="bg-slate-900 space-y-4 py-10">
+                <div className='w-5/6 mx-auto'>
+                    <div className='flex gap-5 items-center'>
+                        <div>
+                            <img src={trend} alt='tredning' className='w-20' />
+                        </div>
 
-                            <div className='flex gap-6 items-center'>
-                                <div>
-                                    <button className='bg-slate-700 text-slate-400 py-3 px-8 font-semibold rounded-lg'>SUBSCRIBED</button>
-                                </div>
-
-                                <div>
-                                    <i className="fa-regular fa-bell text-xl text-slate-400"></i>
-                                </div>
-                            </div>
+                        <div>
+                            <h2 className='text-xl font-medium text-slate-300'>Trending</h2>
                         </div>
                     </div>
-                </section>
+                </div>
+
 
                 <section className='w-5/6 mx-auto '>
                     <div className=" flex overflow-x-scroll text-sm border-y border-slate-600 pt-2 gap-4 md:gap-6">
@@ -69,7 +50,7 @@ export const SubscribePage = () => {
                                 active={active === "tab1"}
                             >
                                 <span className=" font-bold ">
-                                    HOME
+                                    NOW
                                 </span>
                             </button>
                         </div>
@@ -80,7 +61,7 @@ export const SubscribePage = () => {
                                 className={`px-2 md:px-4 hover:text-slate-700 hover:bg-slate-200 py-1 md:py-2 text-slate-500  ${active === "tab3" ? "border-b " : ""}`} active={active === "tab3"}
                             >
                                 <span className=" font-bold ">
-                                    PLAYLISTS
+                                    MUSIC
                                 </span>
                             </button>
                         </div>
@@ -91,7 +72,7 @@ export const SubscribePage = () => {
                                 className={`px-2 md:px-4 hover:text-slate-700 hover:bg-slate-200 py-1 md:py-2 text-slate-500  ${active === "tab4" ? "border-b " : ""}`} active={active === "tab4"}
                             >
                                 <span className=" font-bold ">
-                                    COMMUNITY
+                                    MOVIE
                                 </span>
                             </button>
                         </div>
@@ -102,30 +83,7 @@ export const SubscribePage = () => {
                                 className={`px-2 md:px-4 hover:text-slate-700 hover:bg-slate-200 py-1 md:py-2 text-slate-500  ${active === "tab5" ? "border-b" : ""}`} active={active === "tab5"}
                             >
                                 <span className=" font-bold ">
-                                    CHANNELS
-                                </span>
-                            </button>
-                        </div>
-
-
-                        <div className="">
-                            <button
-                                onClick={() => handleChange("tab6")}
-                                className={`px-2 md:px-4 hover:text-slate-700 hover:bg-slate-200 py-1 md:py-2 text-slate-500  ${active === "tab6" ? "border-b" : ""}`} active={active === "tab6"}
-                            >
-                                <span className=" font-bold">
-                                    ABOUT
-                                </span>
-                            </button>
-                        </div>
-
-                        <div className="">
-                            <button
-                                onClick={() => handleChange("tab7")}
-                                className={`px-2 md:px-4 hover:text-slate-700 hover:bg-slate-200 py-1 md:py-2 text-slate-500  ${active === "tab6" ? "border-b" : ""}`} active={active === "tab6"}
-                            >
-                                <span className=" font-bold">
-                                    LIVE
+                                    GAMING
                                 </span>
                             </button>
                         </div>
@@ -133,7 +91,7 @@ export const SubscribePage = () => {
 
 
                     <div>
-                        <div hidden={active !== "tab1"}>
+                        {/* <div hidden={active !== "tab1"}>
                             <Home />
                         </div>
 
@@ -154,14 +112,10 @@ export const SubscribePage = () => {
                             <About />
                         </div>
 
-
-
+ */}
                     </div>
                 </section>
             </section>
-
-
-
 
         </>
     )
