@@ -4,13 +4,13 @@ export const Plan = () => {
     return (
         <>
 
-            <div className="bg-slate-900 px-5 p-5 h-screen space-y-8">
+            <div className="bg-slate-900 px-5 py-5  lg:h-screen space-y-8">
                 <div className="text-slate-300 text-center">
                     <h2 className="text-3xl font-bold">Plan's for all size</h2>
                     <p>simple pricing That Grows With You Try Any Those Plan’s For 7 Days Free.</p>
                 </div>
 
-                <div className="grid grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <div className="bg-slate-700 rounded-xl p-8 space-y-6">
                         <h2 className="text-center text-slate-300 underline text-2xl font-semibold">Features</h2>
                         <div className="grid grid-cols-2 gap-2">

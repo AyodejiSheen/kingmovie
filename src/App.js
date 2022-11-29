@@ -27,6 +27,8 @@ import { Home } from './views/tvPlatform/home';
 import { Drama } from './views/tvPlatform/drama';
 import { ActionMovie } from './views/tvPlatform/actionMovie';
 import { Romance } from './views/tvPlatform/romance';
+import { YorubaMovie } from './views/tvPlatform/yoruba';
+import { ComedyMovie } from './views/tvPlatform/comedy';
 
 
 
@@ -65,6 +67,8 @@ function App() {
           <Route path="drama" element={<Drama/>}></Route>
           <Route path="action_movie" element={<ActionMovie/>}></Route>
           <Route path="romance" element={<Romance/>}></Route>
+          <Route path="yoruba" element={<YorubaMovie/>}></Route>
+          <Route path="comedy" element={<ComedyMovie/>}></Route>
         </Route>
       </Routes>
 
