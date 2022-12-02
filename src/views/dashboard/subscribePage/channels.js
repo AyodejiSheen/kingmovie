@@ -12,7 +12,7 @@ export const Channels = () => {
 
             <section className='pb-6'>
                 <h2 className="font-bold text-slate-400 border-b border-slate-600 p-5 my-5">Subscriptions</h2>
-                <div className="grid grid-cols-1 lg:grid-cols-8 gap-10 items-center justify-center grid-items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-8 gap-10 items-center justify-center grid-items-center">
                     <div className='justify-self-center text-center space-y-2'>
                         <img src={sub4} alt="subscribe" className='rounded-full ' />
                         <div>

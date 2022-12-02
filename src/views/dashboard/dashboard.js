@@ -15,7 +15,6 @@ export const Dashboard = () => {
         <>
             <section className=''>
                 <div className="bg-slate-900 z-50 px-2 md:px-6 xl:px-24 2xl:px-36 py-1.5 flex items-center justify-between fixed w-full h-16 lg:h-24 border-b border-slate-600">
-
                     <div className='flex gap-4 items-center'>
                         <div onClick={toggleNav}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="text-white font-bold w-7 h-7">
@@ -60,7 +59,7 @@ export const Dashboard = () => {
                                 </div>
                             </Link>
                         </div>
-                        
+
                         <div>
                             <Link to="notification">
                                 <div className='text-lg  items-center'>
@@ -89,12 +88,13 @@ export const Dashboard = () => {
 
                 </div>
 
-                <div className='pt-16 lg:pt-24 '>
-                    <section className='lg:flex'>
-                        <div className=''>
+                <div className='pt-16 lg:pt-24'>
+                    <section className='lg:flex flex-wrap'>
+                        <div className='w-5/6 lg:w-80 xl:w-[20%]'>
                             <SideNav />
                         </div>
-                        <div className='w-full lg:w-full lg:ml-80 xl:ml-72'>
+
+                        <div className='lg:ml-80 xl:ml-[20%]  xl:w-[80%]'>
                             <Outlet />
                         </div>
                     </section>
