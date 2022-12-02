@@ -1,6 +1,6 @@
-import lg1 from '../../media/lg1.jpg'
-import lg2 from '../../media/lg2.jpg'
-import lg3 from '../../media/lg3.jpg'
+import lg1 from '../../media/2.webp'
+import lg2 from '../../media/3.webp'
+import lg3 from '../../media/4.webp'
 import { Link } from 'react-router-dom'
 import { MiniLibrary } from './miniLibrary'
 

@@ -19,7 +19,7 @@ export const Channels = () => {
                             <p className='text-slate-300 font-semibold'>Ben Awad</p>
                             <p className='text-xs text-slate-500'>464K subscribers</p>
                         </div>
-                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>SUBSCRIBED</button>
+                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>UNSUBSCRIBE</button>
                     </div>
 
                     <div className='justify-self-center space-y-2 text-center'>
@@ -28,7 +28,7 @@ export const Channels = () => {
                             <p className='text-slate-300 font-semibold'>Ben Awad</p>
                             <p className='text-xs text-slate-500'>464K subscribers</p>
                         </div>
-                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>SUBSCRIBED</button>
+                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>UNSUBSCRIBE</button>
                     </div>
 
                     <div className='justify-self-center space-y-2 text-center'>
@@ -37,7 +37,7 @@ export const Channels = () => {
                             <p className='text-slate-300 font-semibold'>Ben Awad</p>
                             <p className='text-xs text-slate-500'>464K subscribers</p>
                         </div>
-                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>SUBSCRIBED</button>
+                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>UNSUBSCRIBE</button>
                     </div>
 
 
@@ -57,7 +57,7 @@ export const Channels = () => {
                             <p className='text-slate-300 font-semibold'>Ben Awad</p>
                             <p className='text-xs text-slate-500'>464K subscribers</p>
                         </div>
-                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>SUBSCRIBED</button>
+                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>UNSUBSCRIBE</button>
                     </div>
 
 
@@ -67,7 +67,7 @@ export const Channels = () => {
                             <p className='text-slate-300 font-semibold'>Ben Awad</p>
                             <p className='text-xs text-slate-500'>464K subscribers</p>
                         </div>
-                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>SUBSCRIBED</button>
+                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>UNSUBSCRIBE</button>
                     </div>
 
                     <div className='justify-self-center space-y-2 text-center'>
@@ -76,7 +76,7 @@ export const Channels = () => {
                             <p className='text-slate-300 font-semibold'>Ben Awad</p>
                             <p className='text-xs text-slate-500'>464K subscribers</p>
                         </div>
-                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>SUBSCRIBED</button>
+                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>UNSUBSCRIBE</button>
                     </div>
 
 
@@ -86,7 +86,7 @@ export const Channels = () => {
                             <p className='text-slate-300 font-semibold'>Ben Awad</p>
                             <p className='text-xs text-slate-500'>464K subscribers</p>
                         </div>
-                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>SUBSCRIBED</button>
+                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>UNSUBSCRIBE</button>
                     </div>
 
                     <div className='justify-self-center space-y-2 text-center'>
@@ -95,7 +95,7 @@ export const Channels = () => {
                             <p className='text-slate-300 font-semibold'>Ben Awad</p>
                             <p className='text-xs text-slate-500'>464K subscribers</p>
                         </div>
-                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>SUBSCRIBED</button>
+                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>UNSUBSCRIBE</button>
                     </div>
 
 
@@ -105,7 +105,7 @@ export const Channels = () => {
                             <p className='text-slate-300 font-semibold'>Ben Awad</p>
                             <p className='text-xs text-slate-500'>464K subscribers</p>
                         </div>
-                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>SUBSCRIBED</button>
+                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>UNSUBSCRIBE</button>
                     </div>
 
                     <div className='justify-self-center space-y-2 text-center'>
@@ -114,7 +114,7 @@ export const Channels = () => {
                             <p className='text-slate-300 font-semibold'>Ben Awad</p>
                             <p className='text-xs text-slate-500'>464K subscribers</p>
                         </div>
-                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>SUBSCRIBED</button>
+                        <button className='bg-slate-700 text-slate-400 py-2 px-8 font-semibold rounded-lg'>UNSUBSCRIBE</button>
                     </div>
 
 

@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
-import { motion } from "framer-motion"; //check note.txt for notes on framer motion
-import UiContext from '../context/UI/context';
 import { Link } from 'react-router-dom';
-import AuthContext from '../context/auth/context';
+import MainContext from '../context/context';
 
 
 
@@ -10,27 +8,18 @@ import AuthContext from '../context/auth/context';
 
 export const ProfileNav = () => {
 
-
-    let { isDark, showItem } = useContext(UiContext)
-
-    let { userSignOut, user } = useContext(AuthContext)
+    let {showItem} = useContext(MainContext)
 
 
     return (
         <>
 
-            <div className={isDark === "dark" ? "dark" : ""}>
-                <motion.div
-                    animate={{ y: [-50, 2, 30, 2], scale: 1 }}
-                    initial={{ scale: 0 }}
-                    transition={{ type: "twin", ease: "easeInOut" }}
-                >
                     <div className='absolute mt-4 right-0 w-80  p-8 rounded-lg dark:border-0 border-2 border-slate-300 dark:bg-slate-800 bg-white'>
                         <div className=''>
                             <div className='px-4 pb-4'>
                                 <div className='text-center'>
-                                    <p className='text-lg font-bold text-gray-800 dark:text-gray-200 '>{ user.displayName !== null ? user.displayName : ""}</p>
-                                    <p className='text-sm text-gray-800 dark:text-gray-200 '>{user.email}</p>
+                                    <p className='text-lg font-bold text-gray-800 dark:text-gray-200 '>John Doe</p>
+                                    <p className='text-sm text-gray-800 dark:text-gray-200 '>johndoe@gmail.com</p>
                                 </div>
                             </div>
                             <hr className='dark:opacity-10' />
@@ -73,7 +62,7 @@ export const ProfileNav = () => {
                         </div>
 
 
-                        <div onClick={userSignOut} className='px-6 py-3 cursor-pointer hover:bg-blue-50 hover:dark:bg-gray-700'>
+                        <div className='px-6 py-3 cursor-pointer hover:bg-blue-50 hover:dark:bg-gray-700'>
                             <div className='flex gap-5 items-center'>
                                 <div className='dark:text-slate-400'>
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 lg:w-6 lg:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -89,8 +78,6 @@ export const ProfileNav = () => {
                         <hr className='dark:opacity-10' />
 
                     </div>
-                </motion.div>
-            </div>
 
 
 

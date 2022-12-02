@@ -29,6 +29,11 @@ import { ActionMovie } from './views/tvPlatform/actionMovie';
 import { Romance } from './views/tvPlatform/romance';
 import { YorubaMovie } from './views/tvPlatform/yoruba';
 import { ComedyMovie } from './views/tvPlatform/comedy';
+import { DownloadMovie } from './views/tvPlatform/download';
+import { KidsMovie } from './views/tvPlatform/kids';
+import { TvWatchVideo } from './views/tvPlatform/watchVideo';
+import Notification from './views/tvPlatform/notification';
+import Profile from './views/tvPlatform/profile';
 
 
 
@@ -60,15 +65,22 @@ function App() {
           <Route path="likedvideos" element={<LikedVideos />}></Route>
           <Route path="trending" element={<Trending />}></Route>
           <Route path="plan" element={<Plan />}></Route>
+          <Route path="notification" element={<Notification/>}></Route>
+          <Route path="profile" element={<Profile/>}></Route>
         </Route>
 
         <Route path="tv_platform" element={<TvHome />}>
           <Route index element={<Home />}></Route>
+          <Route path="watch" element={<TvWatchVideo/>}></Route>
           <Route path="drama" element={<Drama/>}></Route>
           <Route path="action_movie" element={<ActionMovie/>}></Route>
           <Route path="romance" element={<Romance/>}></Route>
           <Route path="yoruba" element={<YorubaMovie/>}></Route>
           <Route path="comedy" element={<ComedyMovie/>}></Route>
+          <Route path="downloads" element={<DownloadMovie/>}></Route>
+          <Route path="kids" element={<KidsMovie/>}></Route>
+          <Route path="notification" element={<Notification/>}></Route>
+          <Route path="profile" element={<Profile/>}></Route>
         </Route>
       </Routes>
 

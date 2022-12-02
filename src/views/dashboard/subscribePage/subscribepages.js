@@ -7,7 +7,7 @@ import { Channels } from "./channels";
 import { Community } from "./community";
 import { About } from "./about";
 
-
+import sub4 from '../../../media/4.jpg'
 
 export const SubscribePage = () => {
 
@@ -16,10 +16,6 @@ export const SubscribePage = () => {
 
     const handleChange = (value) => {
         setActive(value);
-
-        if (value === "tab5" || value === "tab6") {
-            showMedia();
-        }
     };
 
 
@@ -41,10 +37,16 @@ export const SubscribePage = () => {
 
                     <div className='w-5/6 mx-auto space-y-8 py-12'>
                         <div className='md:flex space-y-3 md:space-y-0 gap-6 items-center justify-between'>
-                            <div className='space-y-1'>
-                                <h2 className='text-xl text-slate-300 font-bold'>EasyTechGeek</h2>
-                                <p className='text-sm text-slate-400'>@EasyTechGeek</p>
-                                <p className='text-sm text-slate-400'>47.3K subscribers • 465 videos</p>
+                            <div className="flex gap-6">
+                                <div>
+                                    <img src={sub4} alt="new" className="rounded-full w-20" />
+                                </div>
+
+                                <div className='space-y-1'>
+                                    <h2 className='text-xl text-slate-300 font-bold'>EasyTechGeek</h2>
+                                    <p className='text-sm text-slate-400'>@EasyTechGeek</p>
+                                    <p className='text-sm text-slate-400'>47.3K subscribers • 465 videos</p>
+                                </div>
                             </div>
 
                             <div className='flex gap-6 items-center'>
@@ -132,10 +134,12 @@ export const SubscribePage = () => {
                     </div>
 
 
-                    <div>
-                        <div hidden={active !== "tab1"}>
-                            <Home />
-                        </div>
+                    <div >
+                        {active === 'tab1' && (
+                            <div data-aos="fade-down">
+                                <Home  />
+                            </div>
+                        )}
 
                         <div hidden={active !== "tab3"}>
                             <Playlists />

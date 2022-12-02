@@ -1,9 +1,9 @@
 
 import { MiniNav } from "./miniNav";
 import { SideNav } from "./sideNav"
-import lg1 from '../../media/lg1.jpg'
-import lg2 from '../../media/lg2.jpg'
-import lg3 from '../../media/lg3.jpg'
+import lg1 from '../../media/1.webp'
+import lg2 from '../../media/2.webp'
+import lg3 from '../../media/4.webp'
 import dp from '../../media/dp.png'
 import { Link } from "react-router-dom";
 

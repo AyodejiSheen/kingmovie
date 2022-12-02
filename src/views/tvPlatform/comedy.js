@@ -10,7 +10,7 @@ export const ComedyMovie = () => {
 
         <>
 
-            <section className="bg-slate-900 flex justify-between lg:gap-10 px-2 md:px-6 lg:px-10 lg:py-10 py-6">
+            <section className="bg-slate-900 flex h-max justify-between lg:gap-10 px-2 md:px-6 lg:px-10 lg:py-10 py-6">
                 <div className="flex-1 space-y-8">
                     <h2 className="font-bold text-slate-400 border-b border-slate-600 p-5">Comedy Movies</h2>
 
