@@ -2,6 +2,12 @@ import React, { useState } from 'react'
 import cvdp from '../../media/cvdp2.jpg'
 import sub4 from '../../media/9.jpg'
 import { Link } from 'react-router-dom';
+import { Home } from '../dashboard/subscribePage/home';
+import { Playlists } from '../dashboard/subscribePage/playlists';
+import { Community } from '../dashboard/subscribePage/community';
+import { Channels } from '../dashboard/subscribePage/channels';
+import { About } from '../dashboard/subscribePage/about';
+import { DownloadMovie } from './download';
 
 
 
@@ -63,7 +69,7 @@ const Profile = () => {
 
             <div className="">
               <button
-                onClick={() => handleChange("tab3")}
+                onClick={() => handleChange("tab2")}
                 className={`px-2 md:px-4 hover:text-slate-700 hover:bg-slate-200 py-1 md:py-2 text-slate-500  ${active === "tab3" ? "border-b " : ""}`} active={active === "tab3"}
               >
                 <span className=" font-bold ">
@@ -74,7 +80,7 @@ const Profile = () => {
 
             <div className="">
               <button
-                onClick={() => handleChange("tab4")}
+                onClick={() => handleChange("tab3")}
                 className={`px-2 md:px-4 hover:text-slate-700 hover:bg-slate-200 py-1 md:py-2 text-slate-500  ${active === "tab4" ? "border-b " : ""}`} active={active === "tab4"}
               >
                 <span className=" font-bold ">
@@ -85,7 +91,7 @@ const Profile = () => {
 
             <div className="">
               <button
-                onClick={() => handleChange("tab5")}
+                onClick={() => handleChange("tab4")}
                 className={`px-2 md:px-4 hover:text-slate-700 hover:bg-slate-200 py-1 md:py-2 text-slate-500  ${active === "tab5" ? "border-b" : ""}`} active={active === "tab5"}
               >
                 <span className=" font-bold ">
@@ -96,7 +102,7 @@ const Profile = () => {
 
             <div className="">
               <button
-                onClick={() => handleChange("tab8")}
+                onClick={() => handleChange("tab5")}
                 className={`px-2 md:px-4 hover:text-slate-700 hover:bg-slate-200 py-1 md:py-2 text-slate-500  ${active === "tab5" ? "border-b" : ""}`} active={active === "tab5"}
               >
                 <span className=" font-bold ">
@@ -131,28 +137,35 @@ const Profile = () => {
           </div>
 
 
-          {/* <div>
+          <div>
             <div hidden={active !== "tab1"}>
               <Home />
             </div>
 
-            <div hidden={active !== "tab3"}>
+            <div hidden={active !== "tab2"}>
               <Playlists />
             </div>
 
-            <div hidden={active !== "tab4"}>
+            <div hidden={active !== "tab3"}>
               <Community />
             </div>
 
-            <div hidden={active !== "tab5"}>
+            <div hidden={active !== "tab4"}>
               <Channels />
             </div>
 
+            <div hidden={active !== "tab5"}>
+              <DownloadMovie />
+            </div> 
 
             <div hidden={active !== "tab6"}>
               <About />
             </div> 
-          </div>*/}
+
+            <div hidden={active !== "tab7"}>
+              <About />
+            </div> 
+          </div>
 
         </section>
       </section>

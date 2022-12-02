@@ -46,13 +46,21 @@ export const TvHome = () => {
 
                     <div className='text-slate-900 flex items-center gap-4 md:gap-10 font-medium'>
                         <div>
+                            <Link to="/dashboard">
+                                <div className='bg-slate-300 px-2 lg:px-4 py-2 rounded-full cursor-pointer items-center'>
+                                <i class="fa-solid fa-circle-play"></i>
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div>
                             <Link to="plan">
                                 <div className='bg-green-300 px-2 lg:px-4 py-2 rounded-full cursor-pointer items-center'>
                                     <p className='text-xs lg:text-sm text-green-900'>Upgrade to Pro</p>
                                 </div>
                             </Link>
                         </div>
-                        
+
                         <div>
                             <Link to="notification">
                                 <div className='text-lg  items-center'>
