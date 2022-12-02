@@ -16,7 +16,7 @@ export const Playlists = () => {
 
                 <h2 className="font-bold text-slate-400 border-b border-slate-600 p-5 my-5">Angular Videos</h2>
 
-                <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
+                <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
 
 
                     <Link to="watching">
@@ -223,7 +223,7 @@ export const Playlists = () => {
                 </section>
 
                 <h2 className="font-bold text-slate-400 border-b border-slate-600 p-5 my-5">React Videos</h2>
-                <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
+                <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
                     <Link to="watching">
                         <div className="bg-slate-700 border-2 border-slate-600  rounded-lg">
                             <img src={lg1} alt="video1" className="rounded-t-lg w-full" />

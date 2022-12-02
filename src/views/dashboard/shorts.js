@@ -15,7 +15,7 @@ export const ShortsVideo = () => {
 
             <section className="bg-slate-900 px-5 p-5 h-max space-y-6 ">
                 <h2 className="font-bold text-2xl text-slate-400 border-b border-slate-600 py-5">Short Videos</h2>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4'>
                     <div className="bg-slate-700 border-2  border-slate-600  rounded-lg">
                         <img src={lg1} alt="video1" className="rounded-t-lg w-full object-cover h-[30rem]" />
 

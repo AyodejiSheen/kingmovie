@@ -23,7 +23,7 @@ export const Home = () => {
         <>
             <section className='pb-6'>
                 <h2 className="font-semibold text-xl text-slate-400 p-5">Videos <span className='text-sm mx-4'><i class="fa-solid fa-play mr-4"></i> PLAY ALL</span></h2>
-                <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
+                <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
 
 
                     <Link to="watching">

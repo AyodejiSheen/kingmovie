@@ -25,7 +25,7 @@ export const Dashboard = () => {
                             <div><img src={logo} alt="img" className='w-12 lg:w-16' /></div>
                         </div>
                         <div>
-                            <h2 className='text-white hidden lg:block font-bold text-lg'>KING MOVIE</h2>
+                            <h2 className='text-white hidden xl:block font-bold text-lg'>KING MOVIE</h2>
                         </div>
                     </div>
 
@@ -90,11 +90,11 @@ export const Dashboard = () => {
 
                 <div className='pt-16 lg:pt-24'>
                     <section className='lg:flex flex-wrap'>
-                        <div className='w-5/6 lg:w-80 xl:w-[20%]'>
+                        <div className='w-5/6 lg:w-[25%] xl:w-[20%]'>
                             <SideNav />
                         </div>
 
-                        <div className='lg:ml-80 xl:ml-[20%]  xl:w-[80%]'>
+                        <div className='lg:ml-[25%] lg:w-[75%] xl:ml-[20%]  xl:w-[80%]'>
                             <Outlet />
                         </div>
                     </section>
