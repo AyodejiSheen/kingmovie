@@ -14,7 +14,7 @@ export const Dashboard = () => {
     return (
         <>
             <section className=''>
-                <div className="bg-slate-900 z-50 px-2 md:px-6 xl:px-24 2xl:px-36 py-1.5 flex items-center justify-between fixed w-full h-16 lg:h-24 border-b border-slate-600">
+                <div className="bg-blue-900 z-50 px-2 md:px-6 xl:px-24 2xl:px-36 py-1.5 flex items-center justify-between fixed w-full h-16 lg:h-24 border-b border-slate-200">
                     <div className='flex gap-4 items-center'>
                         <div onClick={toggleNav}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="text-white font-bold w-7 h-7">

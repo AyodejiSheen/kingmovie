@@ -13,9 +13,9 @@ export const SideNav = () => {
     return (
         <>
 
-            <section className={`z-20 fixed transform h-full lg:translate-x-0 transition py-8 px-12 duration-300 ease-in-out w-5/6 lg:w-[25%] xl:w-[20%] overflow-y-auto bg-slate-800 pr-4 md:block ${mobileNav ? "-translate-x-0 bg-opacity-80 backdrop-blur-lg" : "-translate-x-full"}`}>
+            <section className={`z-20 fixed transform h-full lg:translate-x-0 transition py-8 px-12 duration-300 ease-in-out w-5/6 lg:w-[25%] xl:w-[20%] overflow-y-auto bg-blue-900 pr-4 md:block ${mobileNav ? "-translate-x-0 bg-opacity-80 backdrop-blur-lg" : "-translate-x-full"}`}>
                 <div className="space-y-14">
-                    <div className="space-y-4 border-b border-slate-600 pb-6">
+                    <div className="space-y-4 border-b border-slate-200 pb-6">
                         <div>
                             <Link to="/dashboard">
                                 <div className="flex gap-3 text-lg font-medium text-white items-center">
@@ -55,7 +55,7 @@ export const SideNav = () => {
                         </div>
                     </div>
 
-                    <div className="border-b border-slate-600 space-y-4 pb-6">
+                    <div className="border-b border-slate-200 space-y-4 pb-6">
                         <div>
                             <Link to="library">
                                 <div className="flex gap-3 text-lg font-medium text-white items-center">
