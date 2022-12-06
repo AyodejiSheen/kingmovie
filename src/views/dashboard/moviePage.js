@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { useContext } from 'react'
 import MainContext from '../../context/context'
 import { HomeOptions } from "../../components/homeOptions";
+import { ShortsVideo } from "./shorts";
 
 
 export const MoviePage = () => {
@@ -24,8 +25,6 @@ export const MoviePage = () => {
             <div className="bg-slate-900 px-5 p-5 h-max space-y-6">
                 <MiniNav />
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
-
-
                     <Link to="watching">
                         <div className="bg-slate-700 border-2 border-slate-600  rounded-lg">
                             <img src={lg1} alt="video1" className="rounded-t-lg w-full" />
@@ -256,6 +255,7 @@ export const MoviePage = () => {
                     </div>
 
                 </section>
+                <ShortsVideo/>
             </div>
 
         </>

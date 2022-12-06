@@ -105,7 +105,7 @@ export const SideNav = () => {
                             </Link>
                         </div>
 
-                        <div>
+                        <div className="hidden">
                             <Link to="settings">
                                 <div className="flex gap-3 text-lg font-medium text-white items-center">
                                     <div>

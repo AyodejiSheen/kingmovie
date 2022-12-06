@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Playlists } from "./playlists";
 
 import cvdp from '../../../media/cvdp.jpg'
+import sub4 from '../../../media/4.jpg'
 import { Home } from "./home";
 import { Channels } from "./channels";
 import { Community } from "./community";
 import { About } from "./about";
 
-import sub4 from '../../../media/4.jpg'
 
 export const SubscribePage = () => {
 
@@ -137,7 +137,7 @@ export const SubscribePage = () => {
                     <div >
                         {active === 'tab1' && (
                             <div data-aos="fade-down">
-                                <Home  />
+                                <Home />
                             </div>
                         )}
 

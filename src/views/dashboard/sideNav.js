@@ -133,7 +133,7 @@ export const SideNav = () => {
 
                     </div>
 
-                    <div className="space-y-2">
+                    <div className="hidden space-y-2">
                         <div>
                             <h2 className="font-bold text-lg text-white">Explore</h2>
                         </div>

@@ -29,4 +29,8 @@ display: none;
 
 body{
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
