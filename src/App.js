@@ -35,6 +35,7 @@ import { TvWatchVideo } from './views/tvPlatform/watchVideo';
 import Notification from './views/tvPlatform/notification';
 import Profile from './views/tvPlatform/profile';
 import { WatchShort } from './views/dashboard/watchShort';
+import { EditProfile } from './components/updateProfile';
 
 
 
@@ -69,6 +70,7 @@ function App() {
           <Route path="notification" element={<Notification/>}></Route>
           <Route path="profile" element={<Profile/>}></Route>
           <Route path="shortwatch" element={<WatchShort/>}></Route>
+          <Route path="editProfile" element={<EditProfile/>}></Route>
         </Route>
 
         <Route path="tv_platform" element={<TvHome />}>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import cvdp from '../../media/cvdp2.jpg'
 import sub4 from '../../media/9.jpg'
 import { Link } from 'react-router-dom';
@@ -8,6 +8,8 @@ import { Community } from '../dashboard/subscribePage/community';
 import { Channels } from '../dashboard/subscribePage/channels';
 import { About } from '../dashboard/subscribePage/about';
 import { DownloadMovie } from './download';
+import { EditProfile } from '../../components/updateProfile';
+import MainContext from '../../context/context';
 
 
 
@@ -18,6 +20,9 @@ const Profile = () => {
   const handleChange = (value) => {
     setActive(value);
   };
+
+
+  let {show, showItem} = useContext(MainContext)
 
 
 
@@ -44,14 +49,23 @@ const Profile = () => {
                 </div>
               </div>
 
-              <div className=''>
+              <div className='flex gap-6 text-xs mt-6 md:mt-0 md:text-base'>
                 <div>
-                  <button className='bg-slate-700 text-slate-400 py-3 px-8 font-semibold rounded-lg'>EDIT PROFILE</button>
+                  <button onClick= {() => showItem('upload')} className='bg-slate-700 text-slate-400 py-3 px-8 font-semibold rounded-lg'>UPLOAD VIDEO</button>
+                </div>
+                <div>
+                  <button onClick= {() => showItem('edit')} className='bg-slate-700 text-slate-400 py-3 px-8 font-semibold rounded-lg'>EDIT PROFILE</button>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        {
+          show === 'edit' && (
+            <EditProfile/>
+          )
+        }
 
         <section className='w-5/6 mx-auto '>
           <div className=" flex overflow-x-scroll text-sm border-y border-slate-600 pt-2 gap-4 md:gap-6">
@@ -156,15 +170,15 @@ const Profile = () => {
 
             <div hidden={active !== "tab5"}>
               <DownloadMovie />
-            </div> 
+            </div>
 
             <div hidden={active !== "tab6"}>
               <About />
-            </div> 
+            </div>
 
             <div hidden={active !== "tab7"}>
               <About />
-            </div> 
+            </div>
           </div>
 
         </section>

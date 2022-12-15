@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import { ProfileNav } from '../../components/profileNav'
+import { UploadVideo } from '../../components/uploadVideo'
 import MainContext from '../../context/context'
 import logo from '../../media/logo.png'
 import { MoviePage } from './moviePage'
@@ -87,6 +88,12 @@ export const Dashboard = () => {
                     </div>
 
                 </div>
+
+                {
+                    show === "upload" && (
+                            <UploadVideo/>
+                    )
+                }
 
                 <div className='pt-16 lg:pt-24'>
                     <section className='lg:flex flex-wrap'>
